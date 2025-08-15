@@ -55,6 +55,10 @@ demo: $(DIST)
 	@javac -d dist -cp dist:$(DIST) example/demo.java
 	@java -ea -cp dist:$(DIST) demo
 
+solver: $(DIST)
+	@javac -d dist -cp dist:$(DIST) example/SolverCLI.java
+	@java -ea -cp dist:$(DIST) SolverCLI $(facelet)
+
 $(DISTTEST): $(DIST) $(TESTSRC)
 	@javac -d dist -cp dist:$(DIST) $(TESTSRC)
 
