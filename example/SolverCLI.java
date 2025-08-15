@@ -19,6 +19,6 @@ public class SolverCLI {
         String result = searchObj.solution(facelet, 21, 100000000, 0, 0);
         
         // Print the result to the console
-        System.out.println(result);
+        System.out.println("Solution: " + result);
     }
 }
